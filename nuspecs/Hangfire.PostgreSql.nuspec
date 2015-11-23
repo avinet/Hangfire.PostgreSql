@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Hangfire.PostgreSql</id>
-    <version>1.3.1</version>
+    <id>Hangfire.PostgreSql3</id>
+    <version>1.3.4</version>
     <title>Hangfire PostgreSql Storage</title>
-    <authors>Frank Hommers</authors>
+    <authors>Frank Hommers, Zachary Sims</authors>
     <owners>frankhommers</owners>
     <projectUrl>http://hmm.rs/Hangfire.PostgreSql</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://raw.github.com/frankhommers/Hangfire.PostgreSql/master/LICENSE.md</licenseUrl>
-    <description>PostgreSql storage implementation for Hangfire (background job system for ASP.NET applications).</description>
+    <description>PostgreSql storage implementation for Hangfire (background job system for ASP.NET applications). Ported to npgsql3.</description>
     <copyright>Copyright &#169; 2014 Frank Hommers</copyright>
-    <tags>Hangfire PostgreSql Postgres</tags>
+    <tags>Hangfire PostgreSql Postgres (ngpsql3)</tags>
     <releaseNotes>
-      https://github.com/frankhommers/Hangfire.PostgreSql/releases
+      https://github.com/zsims/Hangfire.PostgreSql
+      Unofficial additions to support npgsql 3
       1.3.4
-      * Breaking - Use 'Hangfire.Core' 1.3.4.
-      * Breaking - Use 'Npgsql' 2.2.4.1.
-      * Shows schema name in dashboard
-      * Fix GetTimelineStats / GetHourlyTimelineStats incorrect order
+      * Breaking - Use 'Hangfire.Core' 1.5.4.
+      * Breaking - Use 'Npgsql' 3.0.3.0.
+      * Breaking - Use 'Dapper' 1.40.
     </releaseNotes>
     <dependencies>
-      <dependency id="Hangfire.Core" version="1.3.4" />
-      <dependency id="Dapper" version="1.38" />
-      <dependency id="Npgsql" version="2.2.4.1" />
+      <dependency id="Hangfire.Core" version="1.5.3" />
+      <dependency id="Dapper" version="1.40" />
+      <dependency id="Npgsql" version="3.0.3.0" />
     </dependencies>
   </metadata>
   <files>
