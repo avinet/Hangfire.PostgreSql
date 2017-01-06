@@ -83,7 +83,7 @@ namespace Hangfire.PostgreSql.Tests
                 // Arrange
                 var timeout = TimeSpan.FromSeconds(15);
                 var resourceName = "hello";
-                connection.Execute($@"INSERT INTO ""{GetSchemaName()}"".""lock"" VALUES ('{resourceName}', 0, '{DateTime.UtcNow}')");
+                connection.Execute($@"INSERT INTO ""{GetSchemaName()}"".""lock"" VALUES ('{resourceName}', 0, '{DateTime.UtcNow.ToString("o")}')");
 
                 // Act
                 var distributedLock = new PostgreSqlDistributedLock(resourceName, timeout, connection, options);

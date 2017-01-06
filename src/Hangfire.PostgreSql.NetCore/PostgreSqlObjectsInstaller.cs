@@ -93,9 +93,9 @@ namespace Hangfire.PostgreSql
 
               transaction.Commit();
 						}
-						catch (PostgresException ex)
+						catch (NpgsqlException ex)
 						{
-							if ((ex.MessageText ?? "") != "version-already-applied")
+							if ((ex.Message ?? "") != "version-already-applied")
 							{
 								throw;
 							}

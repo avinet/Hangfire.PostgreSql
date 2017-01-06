@@ -5,15 +5,6 @@ namespace Hangfire.PostgreSql
 {
     public static partial class Utils
     {
-        public static bool TryExecute(
-            Action action,
-            Func<Exception, bool> smoothExValidator = default(Func<Exception, bool>),
-            int? tryCount = default(int?))
-        {
-            object futile;
-            return TryExecute(() => { action(); return null; }, out futile, smoothExValidator, tryCount);
-        }
-
         public static bool TryExecute<T>(
             Func<T> func,
             out T result,

@@ -9,7 +9,7 @@
 		"dotnet-test-xunit": "2.2.0-preview2-*",
 		"Hangfire.PostgreSql.NetCore": "1.4.4",
 		"Moq": "4.6.36-alpha",
-		"Npgsql": "3.1.8",
+    "Npgsql": "2.2.7",
 		"Microsoft.Extensions.Testing.Abstractions": "1.0.0-preview2-003121",
 		"Microsoft.NETCore.App": {
 			"version": "1.0.1-*",
